@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Impact,メイリオ,Meiryo,sans-serif;
+    background:radial-gradient(white, rgba(52,132,152,1)); 
+    background-size: cover;
+    flex-direction: column;
+}
+.icon-color{
+    color: #ddd;
+}
+.container{
+    max-width: 1500px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+.container  .card  .face{
+    max-width: 300px;
+    margin: 0 20px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.container  .card  .face1{
+    height: 200px;
+    position: relative;
+    background: #6986c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transform: translateY(200px);
+    
+}
+.container  .card:hover  .face1{
+    transform: translateY(0px); 
+    background: rgba(218, 214, 17, 0.9);
+    
+}
+
+.container  .card .face1 .content{
+    opacity: 0.4;
+    transition: 0.2s;
+}
+.container  .card:hover  .face1 .content{
+    opacity: 1;
+}
+
+.container  .card  .face1 h3{
+    text-align: center;
+    margin: 10px 0 0 ;
+    padding: 0;
+    color: #fff;
+    font-size: 80%;
+}
+
+.container  .card .face0 .content{
+    transition: 0.3s;
+}
+.container  .card  .face0{
+    height: 220px;
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);     /* 左右の向きpx  上下の向きpx ぼかしpx 広がりpx 色 */
+    transform: translateY(0px);
+    z-index: 99;
+}
+.container  .card:hover  .face0{
+    transform: translateY(0);
+}
+
+.container  .card  .face0 p{ 
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.container  .card  .face0 a{
+    margin: 15px 0 0;
+    display: inline-block;
+    /* justify-content:center;      アイテムを右端に寄せる */
+    /* align-self: flex-end; */
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    color:#333;
+    padding: 5px;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+.container  .card  .face0 a:hover{
+    background: #333;
+    color: #fff;
+}
+.line{
+    display: none;
+    
+    position: absolute;
+    bottom: 1px;
+    width: 25px;
+    height: 3px;
+    background-color: rgba(22, 20, 20,0.5);
+    margin: 5px;
+}
+
+.header{
+    opacity: 1;
+    font-size: 200%;
+    font-family: M PLUS Rounded 1c;
+}
+.header  a{
+    text-decoration: none;
+    color: #fff;
+}
+footer{
+    position: absolute;
+    top: 90vh;
+    color: #fff;
+    opacity: 0.8;
+    font-size: 50%;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    .container  .card  .face0 p{ 
+        font-size: 16px;
+    }
+    .container  .card  .face0 a{
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .line{
+        display: block;
+}
+}
+
+

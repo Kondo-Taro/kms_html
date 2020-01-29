@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border-style: none;
+    zoom: 1;
+    outline: none;
+    font-family:'Century Gothic','メイリオ', sans-serif;
+}
+/* @media screen and (max-width:750px){ */
+    html, body,
+    ul, ol, li,
+    h1, h2, h3, h4, h5, h6, p, div {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    }
+    body {
+    background-color: #fff;
+    box-sizing: border-box;
+    }
+    header{
+    width: 100%;
+    margin: 0 auto;
+    margin-top:15px ;
+    margin-bottom:15px ;
+    max-width: 1200px;
+    }
+
+    
+    .navi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    }
+    .navi div:first-child{
+    margin-right: auto;
+    }
+    .navi-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    color: gray;
+    }
+    .navi-item a{
+        padding:0 10px;
+    }
+    .top{
+    padding-top:5px ;
+    margin-bottom: 100px;
+    }
+    .top .bg{
+    margin: 0;
+    width: 100%;
+    height: 50vh;
+    color: #fff;
+    background: linear-gradient(45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 5s ease infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    }
+    .top .bg .top-messe{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .top .bg .top-messe a{
+    color:white
+    }
+
+    .wrap{
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 400px;
+    margin-bottom: 100px;
+    }
+    .wrap h2{
+        font-weight: 600;
+    }
+    .title{
+    text-align: center;
+    font-weight: 240;
+    font-size: 36px;
+    text-decoration: underline gray;
+    }
+    .btn {
+    display: inline-block;
+    text-align: center;
+    font-weight: 240;
+    font-size: 20px;
+    padding: 3px 3px;
+    margin-bottom: 50px;
+    color: gray;
+    border: 3px solid rgba(52,132,152,1);
+    border-radius: 3px;
+    transition: 1s;
+    }
+    .btn:hover{
+    background: rgb(255, 255, 255);
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    }
+    .work{
+    text-align: center;
+    padding: 0 5px;
+    padding-top: 5vh;
+    margin: 0 15px;
+    text-align: center;
+    }
+    .profile{
+    text-align: center;
+    padding: 0 5px;
+    padding-top: 5vh;
+    margin: 0 15px;
+    text-align: center;
+    }
+    .contact{
+    text-align: center;
+    padding: 0 5px;
+    padding-top: 5vh;
+    margin: 0 15px;
+    text-align: center;
+    }
+    .wrap-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+    .wrap-item{
+    display: block;
+    text-align: center;
+    max-width: 300px;
+    padding: 10px 5px;
+    margin: 50px 5px;
+    text-decoration: none;
+    color: white;
+    }
+    .wrap-item img{
+    max-width: 200px;
+    width: 100%;
+    height: 150px;
+    }
+    .wrap-item2{
+    display: block;
+    text-align: center;
+    max-width: 200px;
+    padding: 10px 5px;
+    margin: 50px 5px;
+    text-decoration: none;
+    color: black;
+    font-size: calc(65vw/64);
+    border: 3px solid red;
+    border-radius: 10px;
+    transition: 0.3s;
+    }
+    .wrap-item2:hover{
+        color: white;
+        background-color: red;
+    }
+    .wrap-item2 h4{
+        font-weight: 600;
+    }
+    .wrap-item2 img{
+    max-width: 200px;
+    width: 100%;
+    height: 150px;
+    }
+    .profile-box{
+    display: flex;
+    justify-content: center;
+    }
+    .profile-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    max-width: 600px;
+    padding: 10px 5px;
+    margin: 50px 5px;
+    text-decoration: none;
+    color: white;
+    }
+    .profile-img img{
+    margin-top: 10%;
+    max-width: 300px;
+    height: auto;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    border:5px solid white
+    }
+    .profile-img:hover img{
+        transform: scale(1);
+        animation: bounce 0.6s linear;
+    }
+
+    .profile-text{
+    max-width: 250px;
+    text-align: left;
+    padding: 0 5px;
+    padding-top: 10px;
+    margin: 0 15px;
+    }
+    .profile-text h3{
+    text-align: center;
+    }
+    .contact-box{
+    display: flex;
+    justify-content: center;
+    }
+    .contact-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    max-width: 600px;
+    padding: 10px 5px;
+    margin: 50px 5px;
+    text-decoration: none;
+    flex-direction: column;
+    }
+    footer{
+        margin-top:20px;
+        margin-bottom: 10px;
+        text-align: center;
+        display: block;
+        color: gray;
+        background: ;
+    }
+    
+    #top-re{
+        text-align: center;
+        width: 8vw;
+        color: blue;
+        position: fixed;
+        right: 5px;
+        bottom: 5px;
+    }
+    #top-re a{
+        cursor: pointer;
+    }  
+
+
+
+    /* バックグラウンドとシャドウ */
+    .water{
+    background: rgba(91,209,215,1);
+    box-shadow: 0px 0px 0px 5px rgba(91,209,215,0.51);
+    }
+    .white{
+    background: rgba(255,255,255,1);
+    border: 5px solid gray;
+    box-shadow: 0px 0px 0px 5px rgba(91,209,215,0.51);
+    }
+    .white2{
+    background: rgba(255,255,255,1);
+    border: 5px outset gray;
+    box-shadow:0px -10px 10px 3px rgba(52,132,152,1) inset;
+    }
+    .orange{
+    background: rgba(255,80,47,1);
+    box-shadow: 0px 0px 15px gray ;
+    }
+    .navy{
+    background: rgba(0,77,97,1);
+    box-shadow: 0px 0px 15px gray ;
+    }
+    .darkgleen{
+    background: rgba(52,132,152,1);
+    box-shadow: 0px 0px 15px gray ;
+    }
+    .li-gleen{
+    background: rgba(87,209,201,1);
+    box-shadow: 0px 0px 15px gray ;
+    }
+    .yellow{
+    background: rgba(255,232,105,1);
+    box-shadow: 0px 0px 15px gray ;
+    }
+
+    .btn-red{
+        color: white;
+        transition: 2s;
+    }
+    .btn:hover .btn-red{
+        color:red;
+    }
+
+
+
+
+    /* } */
+
+    @keyframes gradientBG {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    }
+
+    @keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(0.97);
+    }
+    50% {
+        transform: scale(1.05)
+    }
+    75% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+
+    }

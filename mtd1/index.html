@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <!-- 
+    貴様見ているぞ！！！
+    深淵を除くものはまた深淵にのぞかれていることを忘れるな
+    早くこのページを閉じろ！！！
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+    html, body,
+    ul, ol, li,
+    h1, h2, h3, h4, h5, h6, p, div {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+    body {
+    font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+    background-color: #999;
+    color: white;
+    }
+
+    .bd{
+        border: solid 3px rgba(216, 189, 189, 0.5);
+    }
+
+    /* ここまで初期設定 */
+    @media screen and (min-width: 1071px){
+    header{
+        width: 100%;
+        z-index: 10;
+        position: fixed;
+
+    }
+    .navi{
+        margin: 0;
+        list-style: none;
+        padding-left:0;
+        background-color:rgba(153, 153, 153, 0.6);
+        text-align: right;
+    }
+    .navi-item{
+        display:inline-block;
+        padding: 4px 8px;
+        font-size: 12px;
+        color: white;
+    }
+
+    li>a{
+        color: white;
+        text-decoration: none;
+    }
+    li>a:hover{
+        color: royalblue;
+    }
+
+    .top{
+        display: block;
+        height: 400px;
+        background-image: url(img/top-img.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    
+    .top>img{
+        display: block;
+        position: absolute;
+        top:8vh;
+        left:20vw;
+    }
+    .container{
+        display: block;
+        /* margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 60px;
+        margin-bottom: 60px; */
+        /* color: white; */
+
+    }
+    .wrapper-message{
+        text-align: center;
+        margin-right: 15%; 
+        margin-left: 15%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .wrapper-mid{
+        text-align: center;
+        margin-right: 15%; 
+        margin-left: 15%;
+    }
+    .wrapper-mid img{
+        object-fit: cover;
+        max-width:100%;
+        height: auto;   
+    }
+    .mid-item{
+        display:inline-block;
+        width: 49%;
+        vertical-align: middle;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    h1{
+        border-bottom: solid 5px rgba(255,0,0,0.9);
+    }
+    p{
+        text-align: left;
+
+    }
+
+    .contents-b{
+        background:rgba(0,0,0,0.7);
+        /* padding-top: 60px;
+        padding-bottom: 60px; */
+
+    }
+
+
+
+    footer {
+    text-align: center;
+    padding: 20px 0;
+    color: rgb(83, 81, 81);
+    }
+    footer>p{
+        text-align: center;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 1070px)and (min-width: 531px) {
+        header{
+        width: 100%;
+        z-index: 10;
+        position: fixed;
+
+    }
+    .navi{
+        margin: 0;
+        list-style: none;
+        padding-left:0;
+        background-color:rgba(153, 153, 153, 0.6);
+        text-align: right;
+    }
+    .navi-item{
+        display:inline-block;
+        padding: 4px 8px;
+        font-size: 12px;
+        color: white;
+    }
+
+    li>a{
+        color: white;
+        text-decoration: none;
+    }
+    li>a:hover{
+        color: royalblue;
+    }
+
+    .top{
+        display: block;
+        height: 300px;
+        background-image: url(img/top-img.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    
+    .top>img{
+        display: block;
+        max-width:100%;
+        position: absolute;
+        top:50px;
+        left:10vw;
+    }
+    .container{
+        display: block;
+
+    }
+    .wrapper-message{
+        text-align: center;
+        margin-right: 10%; 
+        margin-left: 10%;
+        padding-top: 45px;
+        padding-bottom: 45px; 
+    }
+    .wrapper-mid{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-right: 10%; 
+        margin-left: 10%;
+    }
+    .wrapper-mid img{
+        object-fit: cover;
+        max-width:100%;
+        height: auto;
+    }
+    .mid-item{
+        display:inline-block;
+        width: 100%;
+        vertical-align: middle;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    h1{
+        border-bottom: solid 5px rgba(255,0,0,0.9);
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .contents-b{
+        background:rgba(0,0,0,0.7);
+        /* padding-top: 60px;
+        padding-bottom: 60px; */
+
+    }
+
+
+
+    footer {
+    text-align: center;
+    padding: 20px 0;
+    color: rgb(83, 81, 81);
+    }
+    footer>p{
+        text-align: center;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 530px){
+        header{
+        width: 100%;
+        z-index: 10;
+        position: fixed;
+
+    }
+    .navi{
+        margin: 0;
+        list-style: none;
+        padding-left:0;
+        background-color:rgba(153, 153, 153, 0.6);
+        text-align: right;
+    }
+    .navi-item{
+        display:inline-block;
+        padding: 4px 8px;
+        font-size: 12px;
+        color: white;
+    }
+
+    li>a{
+        color: white;
+        text-decoration: none;
+    }
+    li>a:hover{
+        color: royalblue;
+    }
+
+    .top{
+        display: block;
+        height: 250px;
+        background-image: url(img/top-img.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    
+    .top>img{
+        display: block;
+        max-width:100%;
+        position: absolute;
+        top:20px;
+        left:0vw;
+    }
+    .container{
+        display: block;
+
+    }
+    .wrapper-message{
+        text-align: center;
+        margin-right: 10%; 
+        margin-left: 10%;
+        padding-top: 30px;
+        padding-bottom: 30px; 
+    }
+    .wrapper-mid{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-right: 5%; 
+        margin-left: 5%;
+    }
+    .wrapper-mid img{
+        object-fit: cover;
+        max-width:100%;
+        height: auto;
+    }
+    .mid-item{
+        display:inline-block;
+        width: 100%;
+        vertical-align: middle;
+        /* padding-top: 60px;
+        padding-bottom: 60px; */
+    }
+    h1{
+        border-bottom: solid 5px rgba(255,0,0,0.9);
+        font-size: 30px;
+    }
+    p{
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .contents-b{
+        background:rgba(0,0,0,0.7);
+        /* padding-top: 60px;
+        padding-bottom: 60px; */
+
+    }
+
+
+
+    footer {
+    text-align: center;
+    padding: 20px 0;
+    color: rgb(83, 81, 81);
+    }
+    footer>p{
+        text-align: center;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+    </style>
+    <title>マツダ-電気株式会社</title>
+
+</head>
+<body>
+    <header>
+        <ul class="navi">
+            <li class="navi-item"><a href="#">トップページ</a></li>
+            <li class="navi-item"><a href="#link1">経営理念</a></li>
+            <li class="navi-item"><a href="#link2">コンタクト</a></li>
+            <li class="navi-item"><a href="./mtd2/index.html">採用情報</a></li>
+        </ul>
+    </header>
+    <section class="">
+        <div class="top">
+            <img src="img/Matsuda_logo_keifont.png" alt="ロゴマーク">
+        </div>
+    </section>
+    <div class="container">
+        <div class="contents-b">
+            <div class="wrapper-message">
+                    <div>
+                        <br id="link1">
+                        <h1><span style="color: red">私</span>たちが目指すもの</h1>
+                        <p >
+                            text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text 
+                        </p>
+                        <br>
+                    </div>
+            </div>
+        </div>
+        <div class="bd"></div>
+
+
+        <div class="wrapper-mid">
+            <div class="mid-item">
+                <img src="img/mid-img.jpg" alt="">
+            </div>
+            <div class="mid-item">
+                <h1><span style="color: red">安</span>全こそ信頼の証</h1>
+                <p >
+                    「労働安全衛生法」や「労働安全衛生規則」に準拠して安全な施工をおこなっております。法令に則った安全な施工を行うことを常に意識して作業することや、歩行者に対する安全対策のみならず作業者の安全にも配慮した器材の使用や行動指針を提示し、チェックを怠らず行動しています。 ※コピペ
+                </p>
+            </div>
+        </div>
+        <div class="bd"></div>
+
+
+        <div class="contents-b">
+            <div class="wrapper-mid">
+                <div class="mid-item">
+                    <h1><span style="color: red">エ</span>ネルギーを未来へ</h1>
+                    <p >
+                        化石燃料から再生可能燃料へ、自然エネルギーをより効率化する。最先端の取り組みとエネルギーの未来を創造し次世代へ引き継ぐ。それが私達の考える未来。
+                    </p>
+                </div>
+                <div class="mid-item">
+                    <img src="img/mid-img2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="bd"></div>
+
+        <div class="wrapper-mid">
+                <div class="mid-item">
+                    <img src="img/mid-mtd.jpg" alt="">
+                </div>
+                <div class="mid-item">
+                    <h1><span style="color: red; ">松田</span>の目指す先</h1>
+                        <p >
+                            どうも初めまして、こんにちは松田です。
+                            北海道を第二の首都にすることが僕の目標です。
+                            今の日本は東京一極集中であり、私はそれが気に入りません。
+                            NHKをぶっ壊す前に、私はこの概念をぶっ壊します。
+                        </p>
+                </div>
+        </div>
+        <div class="bd"></div>
+
+
+
+    </div>　
+    <footer >
+        <h3 id="link2" style="color:  white">
+            Contact<br>
+            マツダ電気株式会社& CO.
+        </h3>
+        <p>
+            〒088-3201<br>
+            北海道川上郡弟子屈町字美留和<br>TEL: 015-482-0000 / FAX: 015-482-0001<br>
+            E-mail: matudaryusei@konosaitoha.fiction.desu.jp</p>
+        <p>マツダ電気株式会社& CO. <br> Copyright©</p>
+    </footer>
+</body>
+</html>
+
+<!-- 
+firebase URL
+https://matsuda-html.firebaseapp.com/
+firebase deploy
+
+おてほんサイトURL
+https://www.wataiken.co.jp/
+https://matsudadenki.co.jp/
+https://muuuuu.org/category/taglist/single
+
+フリー画像サイト
+まとめ
+https://webdesign-trends.net/entry/1222
+pixabay
+https://pixabay.com/ja/
+
+ブレイクポイント
+    スマホ：４８０px
+    タブレット：７６８px
+    https://material.io/resources/resizer/
+
+
+ -->

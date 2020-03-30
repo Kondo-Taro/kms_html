@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-width: 425px;
+  font-family: 'Roboto Slab', serif, "Hiragino Kaku Gothic ProN";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-family: 'IBM Plex Serif', serif;
+  display: inline-block;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 15px 20px;
+  border-bottom: solid 3px black;
+}
+
+.text {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.text h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.text p {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: smaller;
+  letter-spacing: 2.5px;
+}
+
+.flexBox {
+  max-width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.flexBox .card {
+  width: 33.3333%;
+  height: 256px;
+  color: white;
+  background-color: gray;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.flexBox .card img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  height: 256px;
+}
+
+.flexBox .card .hoverText {
+  display: none;
+  z-index: 10;
+}
+
+.naviBar {
+  width: 25%;
+  height: 100vh;
+  right: 0;
+  z-index: 10;
+  position: fixed;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-left: solid 1px gray;
+}
+
+.naviBar .naviContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.naviBar .naviContainer .naviMenu {
+  font-size: 24px;
+  font-weight: lighter;
+  padding: 8px 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #551a8b;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.naviBar .naviContainer .naviMenu:hover {
+  text-decoration: underline;
+  opacity: 0.2;
+}
+
+.naviBar ul, .naviBar li, .naviBar a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  width: 75%;
+  margin-right: auto;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .topSection {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/startup.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container .topSection .topMessage {
+  width: 576px;
+  min-width: 320px;
+  height: 80px;
+  background: #434343;
+  -webkit-box-shadow: 10px 10px rgba(165, 42, 42, 0.8);
+          box-shadow: 10px 10px rgba(165, 42, 42, 0.8);
+  cursor: none;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container .topSection .topMessage h1 {
+  position: absolute;
+  top: -50%;
+  left: 8%;
+  font-size: 56px;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.container .topSection .topMessage h1 span {
+  color: gray;
+}
+
+.container .topSection .topMessage p {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  color: whitesmoke;
+}
+
+.container .serviceSection {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 5px;
+  width: 100%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-image: url("../img/Service/wall.jpg");
+  background-attachment: fixed;
+}
+
+.container .serviceSection .wrap {
+  background-color: #ffffff;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container .messageSection {
+  padding-top: 10vh;
+}
+
+.container .messageSection .wrap {
+  background-color: #ffffff;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container .messageSection .bottomBar {
+  width: 100%;
+  height: 1px;
+  margin-top: 10vh;
+  border-bottom: solid 1px gray;
+}
+
+.container .contactSection .wrap {
+  background-color: #ffffff;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container .contactSection .wrap .flexBox {
+  width: 80%;
+  margin: 0 auto;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .contactSection .wrap .flexBox .address {
+  width: 30%;
+  font-size: small;
+  text-align: left;
+}
+
+.container .contactSection .wrap .flexBox .googleMap {
+  width: 70%;
+}
+
+.container .contactSection .wrap .flexBox .googleMap iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.container .contactSection .bottomBar {
+  width: 100%;
+  height: 1px;
+  margin-top: 5vh;
+  border-bottom: solid 1px gray;
+}
+
+.blankSpace {
+  height: 10vh;
+  background: #ffffff;
+  height: 100%;
+}
+
+.blankSpace .bg1 {
+  background-image: url("");
+}
+
+footer {
+  height: 5vh;
+  margin-top: 50vh;
+  padding-top: 28px;
+  font-size: 14px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

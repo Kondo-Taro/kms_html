@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {   
+    width: 100%;
+    min-width: 425px;
+    font-family: 'Roboto Slab', serif, "Hiragino Kaku Gothic ProN";
+    // background-color:rgba($color: #0000ff, $alpha: 0.1);
+    box-sizing: border-box;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+
+  
+$white:#ffffff;
+$grey:#c0c0c0;
+$naviColor:#551a8b;
+
+@mixin barSpace {
+    height: 10vh;
+    background: $white;
+}
+@mixin sectionSpace {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+h2{
+    font-family: 'IBM Plex Serif', serif;
+    display: inline-block;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    color: rgba($color: #000000, $alpha: 0.7) ;
+    padding: 15px 20px;
+    border-bottom: solid 3px black;
+    // font-size: ;
+}
+
+.text{
+    max-width: 80%;
+    margin: 0 auto;
+    h3{
+        text-align: center;
+        margin-bottom: 10px;
+        color: rgba($color: #000000, $alpha: 0.7) ;
+    }
+    p{
+        max-width: 80%;
+        margin: 0 auto;
+        text-align: left;
+        font-size: smaller;
+        letter-spacing: 2.5px;
+    }
+}
+.flexBox{
+    max-width: 100%;
+    margin: 0 auto;
+    // margin-top: 20px;
+    display: flex;
+    // justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    .card{
+        width: 33.3333%;
+        height: 256px;
+        color: white;
+        background-color: gray;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        // &:first-child{
+        //     width: 100%;
+            
+
+        // }
+        img{
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            transition: 0.7s;
+            height: 256px;
+        }
+        .hoverText{
+            display: none;
+            z-index: 10;
+        }
+
+    }
+}
+
+.naviBar{
+    width: 25%;
+    height: 100vh;
+    right:0;
+    z-index: 10;
+    position: fixed;
+    background: $white;
+    display: flex;
+    justify-content: center;
+    border-left: solid 1px gray;
+
+    .naviContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .naviMenu{
+            font-size: 24px;
+            font-weight: lighter;
+            padding: 8px 0px;
+            transition:0.5s;
+            color: $naviColor;
+            box-sizing: border-box;
+            &:hover{
+                text-decoration: underline;
+                opacity: 0.2;
+            }
+        }
+    }
+    ul,li,a{
+    text-decoration: none;
+    list-style: none;
+    }
+}
+.container{
+    width: 75%;
+    margin-right: auto;
+    // background: $grey;
+    overflow: hidden;
+    box-sizing: border-box;
+    .topSection{
+        position: relative;
+        height: 100vh;
+        background-image: url("../img/startup.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        .topMessage{
+            width: 576px;
+            min-width: 320px;
+            height: 80px;
+            background: #434343;
+            box-shadow: 10px 10px rgba(165, 42, 42, 0.8);
+            cursor: none;
+            z-index: 10;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform : translate(-50%,-50%);
+            h1{
+                position: absolute;
+                top: -50%;
+                left: 8%;
+                font-size: 56px;
+                padding: 0;
+                margin: 0;
+                color: white;
+                span{
+                    color: gray;
+                }
+            }
+            p{
+                position: absolute;
+                top: 50%;
+                left: 30%;
+                color: whitesmoke;
+            }
+        }            
+    }
+    .serviceSection{
+        @include sectionSpace;
+        width: 100%;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        background-image: url("../img/Service/wall.jpg");
+        background-attachment: fixed;
+
+        .wrap{
+            background-color: $white;
+            width: 80%;
+            margin:0 auto;
+
+        }
+    }
+    .messageSection{
+        padding-top: 10vh;
+        // padding-bottom: 10vh;
+        .wrap{
+            background-color: $white;
+            width: 80%;
+            margin:0 auto;
+        }
+        .bottomBar{
+            width: 100%;
+            height: 1px;
+            margin-top: 10vh;
+            border-bottom: solid 1px gray;
+        }
+    }
+    .contactSection{
+        .wrap{
+            background-color: $white;
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+            .flexBox{
+            width: 80%;
+            margin: 0 auto;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+                .address{
+                    width: 30%;
+                    font-size: small;
+                    text-align: left;
+                }
+                .googleMap{
+                    width: 70%;
+                    iframe{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }       
+        .bottomBar{
+            width: 100%;
+            height: 1px;
+            margin-top: 5vh;
+            border-bottom: solid 1px gray;
+        }
+    }
+}
+
+.blankSpace{
+    @include barSpace;
+    height: 100%;
+    // padding: 20px;
+    // border: double 20px black;
+    .bg1{
+        background-image: url("");
+    }
+
+    
+}
+
+  footer {
+    height: 5vh;
+    margin-top: 50vh;
+    padding-top: 28px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+
+
+
+//   https://f-tpl.com/sample/tpl_096/
